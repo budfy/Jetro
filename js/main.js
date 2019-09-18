@@ -5,6 +5,7 @@ $('.slider-cont').slick({
   fade: true,
   asNavFor: '.slider-nav'
 });
+
 $('.slider-nav').slick({
   slidesToShow: 6,
   slidesToScroll: 1,
@@ -13,4 +14,10 @@ $('.slider-nav').slick({
   centerMode: false,
   focusOnSelect: true,
   variableWidth: true
+});
+
+$('.btn__row').on('click', function(e) {
+  e.preventDefault;
+  $(this).toggleClass('btn__row-clicked');
+  $('.menu__drop-down').toggleClass('menu__drop-down-active');
 });
