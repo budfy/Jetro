@@ -7,13 +7,16 @@ $('.slider-cont').slick({
 });
 
 $('.slider-nav').slick({
-  slidesToShow: 6,
+  slidesToShow: 3,
   slidesToScroll: 1,
   asNavFor: '.slider-cont',
   dots: false,
   centerMode: false,
   focusOnSelect: true,
-  variableWidth: true
+  variableWidth: true,
+  touchMove: true,
+  swipe: true,
+  arrows: false
 });
 
 $('.btn__row').on('click', function(e) {
